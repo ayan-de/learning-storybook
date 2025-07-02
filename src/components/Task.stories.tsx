@@ -1,8 +1,8 @@
 //Below we build out Task’s three test states in the story file:
 
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { fn } from '@storybook/test';
+import { fn } from 'storybook/test';
 
 import Task from './Task';
 
