@@ -1,12 +1,21 @@
 .storybook-button {
-  display: inline-block;
+    display: inline-flex;
+  align-items: center;
   cursor: pointer;
   border: 0;
   border-radius: 3em;
   font-weight: 700;
   line-height: 1;
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0.5em 1em;
+  gap: 0.5em; /* Adds space between icon and text */
 }
+.storybook-button-icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+
 .storybook-button--primary {
   background-color: #555ab9;
   color: white;
@@ -28,3 +37,4 @@
   padding: 12px 24px;
   font-size: 16px;
 }
+
