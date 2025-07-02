@@ -25,6 +25,8 @@ export const Primary: Story = {
   args: {
     primary: true,
     label: "Primary Button",
+    icon: true,
+    textareaValue: "🔍"
   },
 };
 

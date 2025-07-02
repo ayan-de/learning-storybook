@@ -10,7 +10,7 @@ export interface ButtonProps {
     size?: "small" | "medium" | "large";
     /** Button contents */
     label: string;
-
+    textareaValue: string,
     icon?: boolean;
     /** Optional click handler */
     onClick?: () => void;
@@ -22,6 +22,7 @@ export const Button = ({
     backgroundColor,
     label = "Change this text",
     icon = true,
+    textareaValue = "🔍",
     onClick,
     ...props
 }: ButtonProps) => {
@@ -38,7 +39,8 @@ const classes = ["storybook-button", `storybook-button--${size}`, mode].join(" "
             onClick={onClick}
             {...props}
         >
-            {icon && <img src={searchIcon} alt="" className="storybook-button-icon" />}
+            <textarea defaultValue={textareaValue} />
+            {/* {icon && <img src={searchIcon} alt="" className="storybook-button-icon" />} */}
             {label}
         </button>
     );
