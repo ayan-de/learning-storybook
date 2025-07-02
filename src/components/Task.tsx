@@ -12,7 +12,7 @@ type TaskProps = {
   onPinTask: (id: string) => void;
 };
 
-
+//these props will provide the data and events to the Task component
 export default function Task({
   task: { id, title, state },
   onArchiveTask,
