@@ -32,19 +32,22 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
+    textareaValue: "🔍",
     label: "Secondary Button",
   },
 };
 
 export const Large: Story = {
   args: {
+    textareaValue: "🔍",
     size: "large",
     label: "Large Button",
   },
 };
 
 export const Small: Story = {
-  args: {   
+  args: {
+    textareaValue: "🔍",
     size: "small",
     label: "Small Button",
   },
